@@ -204,6 +204,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
     <Content Include="eg_\comm_\_ecdh\Js.ascx" />
     <Content Include="eg_\comm_\_ecdh\JsUp.ascx" />
     <Content Include="eg_\sym_\aes_\_cbc\Js.ascx" />
@@ -220,6 +221,13 @@
     <Content Include="_this\JsUp.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="eg_\comm_\_ecdh\Js.ascx.cs">
       <DependentUpon>Js.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
